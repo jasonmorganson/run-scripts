@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
     "target": "es2015",
-    "sourceMap": true,
+    "module": "commonjs",
+    "strict": true,
     "pretty": true,
-    "strict": true
+    "sourceMap": true,
+    "declaration": true
   }
 }
