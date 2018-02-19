@@ -5,7 +5,7 @@ const scripts = {
     test: 'run test'
 }
 
-read().then(pkg => {
+read('package.json').then(pkg => {
     pkg.scripts = scripts
-    write(pkg)
+    write('package.json', pkg)
 })
