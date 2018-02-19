@@ -14,7 +14,8 @@
     "write-pkg": "^3.1.0"
   },
   "scripts": {
-    "test": "run test"
+    "test": "run test",
+    "postinstall": "node install"
   },
   "repository": {
     "type": "git",

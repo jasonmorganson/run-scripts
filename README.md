@@ -14,14 +14,7 @@ In a project:
 1. Install
 > `npm i --save-dev runjs run-scripts`
 
-2. Edit npm scripts to use run scripts
-> ```json
-> "scripts": {
-    "test": "run test"
-> }
-> ```
-
-3. Run with either npm or run scripts
+2. Run with either npm or run scripts
 Like this:
 > `run test`
 Or this works like normal:
