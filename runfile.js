@@ -19,6 +19,7 @@ function build() {
 }
 
 function test() {
+    lint()
     build()
     run(`nyc ava`)
 }
