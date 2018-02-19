@@ -1,8 +1,8 @@
 {
   "name": "@jasonmorganson/run-scripts",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Common runjs scripts",
-  "main": "runscript.js",
+  "main": "runfile.js",
   "dependencies": {
     "nyc": "^11.4.1",
     "read-pkg": "^3.0.0",
