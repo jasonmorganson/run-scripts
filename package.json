@@ -1,0 +1,37 @@
+{
+  "name": "@jasonmorganson/run-scripts",
+  "version": "1.0.0",
+  "description": "Common runjs scripts",
+  "main": "runscript.js",
+  "dependencies": {
+    "nyc": "^11.4.1",
+    "read-pkg": "^3.0.0",
+    "rimraf": "^2.6.2",
+    "runjs": "^4.3.0",
+    "tslint": "^5.9.1",
+    "typedoc": "^0.10.0",
+    "typescript": "^2.7.2",
+    "write-pkg": "^3.1.0"
+  },
+  "scripts": {
+    "test": "run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonmorganson/run-scripts.git"
+  },
+  "keywords": [
+    "runjs",
+    "run",
+    "scripts"
+  ],
+  "author": {
+    "name": "jason@morganson.me"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasonmorganson/run-scripts/issues"
+  },
+  "homepage": "https://github.com/jasonmorganson/run-scripts#readme",
+  "readme": "https://github.com/jasonmorganson/run-scripts/README.md"
+}
