@@ -14,7 +14,9 @@ In a project:
 1. Install
 > `npm i --save-dev runjs run-scripts`
 
-2. Run with either npm or run scripts
+2. Commit changes to `package.json`, `runfile.js`, and `tsconfig.json`
+
+3. Run with either npm or run scripts
 Like this:
 > `run test`
 Or this works like normal:
