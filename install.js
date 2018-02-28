@@ -24,7 +24,10 @@ read(pkg).then(json => {
     fs.writeFileSync(path.join(cwd, 'tsconfig.json'), tsconfig)
 
     // Write package.json scripts
+    json.scripts = json.scripts || {}
+    const start = json.scripts.start
     json.scripts = scripts
+    json.scripts.start = start
     log('Scripts: ' + Object.keys(scripts).join(', '))
     write(pkg, json).then(() => {
         log('Installed run-scripts!')
