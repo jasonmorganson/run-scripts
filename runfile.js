@@ -34,10 +34,16 @@ function docs() {
     run('typedoc src types --out docs')
 }
 
+function prepublish() {
+    test.call(this)
+    run('pkg-ok')
+}
+
 module.exports = {
     docs,
     lint,
     test,
     clean,
     build,
+    prepublish,
 }

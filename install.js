@@ -8,6 +8,7 @@ const pkg = path.join(cwd, 'package.json')
 const name = '@jasonmorganson/run-scripts'
 
 const scripts = {
+    prepublishOnly: 'run prepublish',
     test: 'run test'
 }
 
