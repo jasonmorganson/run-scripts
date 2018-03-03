@@ -25,8 +25,9 @@ function build() {
 
 function unit() {
     const opt = option(options(this))
+    const nyc = `nyc --check-coverage --per-file --lines 100 --branches 100 --functions 100 --statements 100`
     build.call(this)
-    run(`nyc ava ${opt('w')} ${opt('watch')}`)
+    run(`${nyc} ava ${opt('w')} ${opt('watch')}`)
 }
 
 function test() {
