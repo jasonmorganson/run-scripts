@@ -23,11 +23,16 @@ function build() {
     run(`tsc --rootDir ${cwd} --outDir ${cwd}/dist ${opt('w')} ${opt('watch')}`)
 }
 
+function unit() {
+    const opt = option(options(this))
+    build.call(this)
+    run(`nyc ava ${opt('w')} ${opt('watch')}`)
+}
+
 function test() {
     const opt = option(options(this))
     lint.call(this)
-    build.call(this)
-    run(`nyc ava ${opt('w')} ${opt('watch')}`)
+    unit.call(this)
 }
 
 function docs() {
