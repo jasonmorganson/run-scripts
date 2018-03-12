@@ -20,7 +20,7 @@ function lint() {
 function build() {
     const opt = option(options(this))
     clean()
-    run(`tsc --rootDir ${cwd} --outDir ${cwd}/dist ${opt('w')} ${opt('watch')}`)
+    run(`tsc --rootDir ${cwd} --baseUrl ${cwd} --outDir ${cwd}/dist ${opt('w')} ${opt('watch')}`)
 }
 
 function unit() {
