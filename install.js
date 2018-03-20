@@ -5,7 +5,7 @@ const write = require('write-pkg')
 const log = console.log
 const cwd = process.env.INIT_CWD || process.cwd()
 const pkg = path.join(cwd, 'package.json')
-const name = require('package.json').name
+const name = require('./package.json').name
 
 const scripts = {
     prepublishOnly: 'run prepublish',
