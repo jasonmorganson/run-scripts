@@ -1,5 +1,5 @@
 {
-  "name": "@jasonmorganson/run-scripts",
+  "name": "@credsimple/run-scripts",
   "version": "1.5.0",
   "description": "Common runjs scripts",
   "main": "runfile.js",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jasonmorganson/run-scripts.git"
+    "url": "git+https://github.com/credsimple/run-scripts.git"
   },
   "keywords": [
     "runjs",
@@ -36,8 +36,8 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jasonmorganson/run-scripts/issues"
+    "url": "https://github.com/credsimple/run-scripts/issues"
   },
-  "homepage": "https://github.com/jasonmorganson/run-scripts#readme",
-  "readme": "https://github.com/jasonmorganson/run-scripts/README.md"
+  "homepage": "https://github.com/credsimple/run-scripts#readme",
+  "readme": "https://github.com/credsimple/run-scripts/README.md"
 }
