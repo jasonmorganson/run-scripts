@@ -1,9 +1,10 @@
 {
   "name": "@credsimple/run-scripts",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Common runjs scripts",
   "main": "runfile.js",
   "dependencies": {
+    "ava": "^0.25.0",
     "nyc": "^11.4.1",
     "pkg-ok": "^2.1.0",
     "read-pkg": "^3.0.0",

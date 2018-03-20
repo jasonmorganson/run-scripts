@@ -20,14 +20,20 @@ function lint() {
 function build() {
     const opt = option(options(this))
     clean()
-    run(`tsc --rootDir ${cwd} --outDir ${cwd}/dist ${opt('w')} ${opt('watch')}`)
+    run(`tsc --rootDir ${cwd} --baseUrl ${cwd} --outDir ${cwd}/dist ${opt('w')} ${opt('watch')}`)
+}
+
+function unit() {
+    const opt = option(options(this))
+    const nyc = `nyc --check-coverage --per-file --lines 100 --branches 100 --functions 100 --statements 100`
+    build.call(this)
+    run(`${nyc} ava ${opt('w')} ${opt('watch')}`)
 }
 
 function test() {
     const opt = option(options(this))
     lint.call(this)
-    build.call(this)
-    run(`nyc ava ${opt('w')} ${opt('watch')}`)
+    unit.call(this)
 }
 
 function docs() {
