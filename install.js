@@ -17,7 +17,7 @@ log('Installing run-scripts')
 read(pkg).then(json => {
 
     // Write runfile
-    const runfile = `module.exports = {\n    ...require('${name}')\n}`
+    const runfile = `module.exports = require('${name}')`
     fs.writeFileSync(path.join(cwd, 'runfile.js'), runfile)
 
     // Write tsconfig
