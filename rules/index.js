@@ -4,7 +4,10 @@ const immutable = require('./tslint-immutable');
 const microsoft = require('./tslint-microsoft-contrib');
 
 const rules = Object.assign(
-    {},
+    {
+        "semicolon": [true, "never"],
+        "quotemark": [true, "single"]
+    },
     immutable,
     sonarts,
     consistentCodeStyle,
