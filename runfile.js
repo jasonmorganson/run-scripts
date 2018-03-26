@@ -14,7 +14,7 @@ function clean() {
 
 function lint() {
     const opt = option(options(this))
-    run(`tslint --project ${cwd}/tsconfig.json --config ${dir}/tslint.json --format verbose ${opt('fix')}`)
+    run(`tslint --project ${cwd}/tsconfig.json --config ${dir}/rules/index.js --format verbose ${opt('fix')}`)
 }
 
 function build() {

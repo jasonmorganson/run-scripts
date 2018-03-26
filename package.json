@@ -1,6 +1,6 @@
 {
   "name": "@jasonmorganson/run-scripts",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "Common runjs scripts",
   "main": "runfile.js",
   "dependencies": {
@@ -39,5 +39,9 @@
     "url": "https://github.com/jasonmorganson/run-scripts/issues"
   },
   "homepage": "https://github.com/jasonmorganson/run-scripts#readme",
-  "readme": "https://github.com/jasonmorganson/run-scripts/README.md"
+  "readme": "https://github.com/jasonmorganson/run-scripts/README.md",
+  "devDependencies": {
+    "tslint-consistent-codestyle": "^1.12.2",
+    "tslint-sonarts": "^1.6.0"
+  }
 }
