@@ -18,7 +18,9 @@ const extensions = {
 const tsLintJson = Object.assign(
     {},
     extensions,
-    rules
+    {
+        rules
+    }
 );
 
 
