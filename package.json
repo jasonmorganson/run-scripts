@@ -42,6 +42,7 @@
   "readme": "https://github.com/jasonmorganson/run-scripts/README.md",
   "devDependencies": {
     "tslint-consistent-codestyle": "^1.12.2",
+    "tslint-immutable": "^4.5.2",
     "tslint-sonarts": "^1.6.0"
   }
 }

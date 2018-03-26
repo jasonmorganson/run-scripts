@@ -1,8 +1,10 @@
 const sonarts = require('./tslint-sonarts');
 const consistentCodeStyle = require('./tslint-consistent-codestyle');
+const immutable = require('./tslint-immutable');
 
 const rules = Object.assign(
     {},
+    immutable,
     sonarts,
     consistentCodeStyle
 );
@@ -10,6 +12,7 @@ const rules = Object.assign(
 const extensions = {
     "extends": [
         "tslint:all",
+        "tslint-immutable",
         "tslint-sonarts", 
         "tslint-consistent-codestyle"
     ]
