@@ -12,9 +12,13 @@ function clean() {
     run('rimraf dist')
 }
 
+function fix() {
+    run(`tslint --config ${dir}/tslint.json --format verbose --force --fix src/**/*.ts`)
+}
+
 function lint() {
-    const opt = option(options(this))
-    run(`tslint --project ${cwd}/tsconfig.json --config ${dir}/tslint.json --format verbose ${opt('fix')}`)
+    fix()
+    run(`tslint --project ${cwd}/tsconfig.json --config ${dir}/tslint.json --format verbose`)
 }
 
 function build() {
@@ -46,6 +50,7 @@ function prepublish() {
 }
 
 module.exports = {
+    fix,
     docs,
     lint,
     test,
