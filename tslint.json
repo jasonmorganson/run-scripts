@@ -1,6 +1,6 @@
 {
     "extends": [
-        "tslint:recommended"
+        "tslint:all"
     ],
     "rules": {
         "semicolon": [true, "never"],
