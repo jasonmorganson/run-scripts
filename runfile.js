@@ -1,4 +1,4 @@
-const {run: runjs, options} = require('runjs')
+const {run: runjs, help, options} = require('runjs')
 const dir = __dirname
 const log = console.log
 const cwd = process.cwd()
@@ -12,6 +12,7 @@ function clean() {
     run('rimraf dist')
 }
 
+help(fix, 'Applies any possible fixes')
 function fix() {
     run(`tslint --config ${dir}/tslint.json --format verbose --force --fix src/**/*.ts`)
 }
