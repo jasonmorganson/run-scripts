@@ -16,7 +16,7 @@ const rules = Object.assign(
 
 const extensions = {
     "extends": [
-        "tslint:all",
+        "tslint:recommended",
         "tslint-immutable",
         "tslint-sonarts", 
         "tslint-consistent-codestyle",
