@@ -14,7 +14,7 @@ module.exports = {
      "no-method-signature": true,
   
      // Functional style rules
-     "no-this": true,
+     "no-this": false,
      "no-class": false,
      "no-mixed-interface": true,
      "no-expression-statement": false,
