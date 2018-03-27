@@ -15,8 +15,8 @@ module.exports = {
   
      // Functional style rules
      "no-this": true,
-     "no-class": true,
+     "no-class": false,
      "no-mixed-interface": true,
      "no-expression-statement": false,
-     "no-if-statement": true
+     "no-if-statement": false
 }
