@@ -1,9 +1,0 @@
-{
-    "extends": [
-        "tslint:all"
-    ],
-    "rules": {
-        "semicolon": [true, "never"],
-        "quotemark": [true, "single"]
-    }
-}
