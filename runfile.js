@@ -1,4 +1,4 @@
-const {run: runjs, options} = require('runjs')
+const {run: runjs, help, options} = require('runjs')
 const dir = __dirname
 const log = console.log
 const cwd = process.cwd()
@@ -12,9 +12,14 @@ function clean() {
     run('rimraf dist')
 }
 
+help(fix, 'Applies any possible fixes')
+function fix() {
+    run(`tslint --config ${dir}/rules/index.js --format verbose --force --fix src/**/*.ts`)
+}
+
 function lint() {
-    const opt = option(options(this))
-    run(`tslint --project ${cwd}/tsconfig.json --config ${dir}/tslint.json --format verbose ${opt('fix')}`)
+    fix()
+    run(`tslint --project ${cwd}/tsconfig.json --config ${dir}/rules/index.js --format verbose`)
 }
 
 function build() {
@@ -46,6 +51,7 @@ function prepublish() {
 }
 
 module.exports = {
+    fix,
     docs,
     lint,
     test,
