@@ -12,7 +12,7 @@ https://hackernoon.com/simple-build-tools-npm-scripts-vs-makefile-vs-runjs-31e57
 In a project:
 
 1. Install
-> `npm install --save-dev runjs @jasonmorganson/run-scripts`
+> `npm i -D runjs @credsimple/run-scripts`
 
 2. Commit changes to `package.json`, `runfile.js`, and `tsconfig.json`
 
