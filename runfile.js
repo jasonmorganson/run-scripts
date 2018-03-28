@@ -14,7 +14,7 @@ function clean() {
 
 help(fix, 'Applies any possible fixes')
 function fix() {
-    run(`tslint --config ${dir}/rules/index.js --format verbose --force --fix src/**/*.ts`)
+    run(`tslint --config ${dir}/rules/index.js --format verbose --fix src/**/*.ts`)
 }
 
 function lint() {
