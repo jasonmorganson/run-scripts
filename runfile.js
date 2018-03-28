@@ -18,7 +18,6 @@ function fix() {
 }
 
 function lint() {
-    fix()
     run(`tslint --project ${cwd}/tsconfig.json --config ${dir}/rules/index.js --format verbose`)
 }
 
