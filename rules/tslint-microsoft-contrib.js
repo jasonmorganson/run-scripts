@@ -3,5 +3,9 @@ module.exports = {
     "import-name": true,
     "no-useless-files": true,
     "promise-must-complete": true,
-    "no-banned-terms": true
+    "no-banned-terms": true,
+
+    /* Disabled rules */
+
+    "no-relative-imports": false
 };
