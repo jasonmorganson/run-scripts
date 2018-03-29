@@ -3,7 +3,7 @@ const path = require('path')
 const read = require('read-pkg')
 const write = require('write-pkg')
 const log = console.log
-const cwd = process.env.INIT_CWD || process.cwd()
+const cwd = process.cwd()
 const pkg = path.join(cwd, 'package.json')
 const name = require('./package.json').name
 
