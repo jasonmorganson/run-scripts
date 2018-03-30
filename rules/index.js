@@ -18,7 +18,8 @@ const tsLintJson = Object.assign(
         "rules": Object.assign(
             {
                 "semicolon": [true, "never"],
-                "quotemark": [true, "single"]
+                "quotemark": [true, "single"],
+                "no-implicit-dependencies": [true, "dev"]
             },
             immutable,
             sonarts,
