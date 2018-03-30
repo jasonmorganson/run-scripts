@@ -1,6 +1,6 @@
 {
   "name": "@credsimple/run-scripts",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "description": "Common runjs scripts",
   "main": "runfile.js",
   "dependencies": {
