@@ -20,7 +20,8 @@ const tsLintJson = Object.assign(
                 "semicolon": [true, "never"],
                 "quotemark": [true, "single"],
                 "no-implicit-dependencies": [true, "dev"],
-                "no-angle-bracket-type-assertion": true
+                "no-angle-bracket-type-assertion": true,
+                "prefer-object-spread": true
             },
             immutable,
             sonarts,
