@@ -21,7 +21,8 @@ const tsLintJson = Object.assign(
                 "quotemark": [true, "single"],
                 "no-implicit-dependencies": [true, "dev"],
                 "no-angle-bracket-type-assertion": true,
-                "prefer-object-spread": true
+                "prefer-object-spread": true,
+                "no-floating-promises": true
             },
             immutable,
             sonarts,
