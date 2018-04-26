@@ -1,6 +1,6 @@
 {
   "name": "@jasonmorganson/run-scripts",
-  "version": "1.10.0",
+  "version": "1.10.1",
   "description": "Common runjs scripts",
   "main": "runfile.js",
   "dependencies": {
