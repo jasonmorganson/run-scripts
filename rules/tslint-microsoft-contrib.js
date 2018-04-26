@@ -8,5 +8,6 @@ module.exports = {
 
     "import-name": false,
     "missing-jsdoc": false,
+    "prefer-type-cast": false,
     "no-relative-imports": false
 };
