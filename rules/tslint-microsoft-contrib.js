@@ -7,5 +7,6 @@ module.exports = {
     /* Disabled rules */
 
     "import-name": false,
+    "missing-jsdoc": false,
     "no-relative-imports": false
 };
