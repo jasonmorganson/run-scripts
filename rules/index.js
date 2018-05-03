@@ -22,7 +22,11 @@ const tsLintJson = Object.assign(
                 "no-implicit-dependencies": [true, "dev"],
                 "no-angle-bracket-type-assertion": true,
                 "prefer-object-spread": true,
-                "no-floating-promises": true
+                "no-floating-promises": true,
+
+                /* Disabled rules */
+
+                "no-single-line-block-comment": false
             },
             immutable,
             sonarts,
