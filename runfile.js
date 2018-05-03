@@ -54,6 +54,7 @@ module.exports = {
     fix,
     docs,
     lint,
+    unit,
     test,
     clean,
     build,
