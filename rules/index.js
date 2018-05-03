@@ -9,7 +9,7 @@ const tsLintJson = Object.assign(
         "extends": [
             "tslint:recommended",
             "tslint-immutable",
-            "tslint-sonarts", 
+            "tslint-sonarts",
             "tslint-consistent-codestyle",
             "tslint-microsoft-contrib"
         ]
@@ -22,7 +22,11 @@ const tsLintJson = Object.assign(
                 "no-implicit-dependencies": [true, "dev"],
                 "no-angle-bracket-type-assertion": true,
                 "prefer-object-spread": true,
-                "no-floating-promises": true
+                "no-floating-promises": true,
+
+                /* Disabled rules */
+
+                "no-single-line-block-comment": false
             },
             immutable,
             sonarts,
@@ -33,3 +37,4 @@ const tsLintJson = Object.assign(
 );
 
 module.exports = tsLintJson;
+
