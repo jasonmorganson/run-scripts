@@ -9,7 +9,7 @@ const tsLintJson = Object.assign(
         "extends": [
             "tslint:recommended",
             "tslint-immutable",
-            "tslint-sonarts", 
+            "tslint-sonarts",
             "tslint-consistent-codestyle",
             "tslint-microsoft-contrib"
         ]
@@ -37,3 +37,4 @@ const tsLintJson = Object.assign(
 );
 
 module.exports = tsLintJson;
+
